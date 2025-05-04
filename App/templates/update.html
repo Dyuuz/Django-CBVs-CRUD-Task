@@ -1,20 +1,11 @@
-{% load static %}
+{% extends "list.html" %}
+{% load i18n %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Car System</title>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet"/>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+{% block content %}
     <header class="sidebar-header d-flex justify-content-center align-items-center" style="height: 100vh; text-align: center;">
         <div>
-            <h1>Update Existing Car Info</h1>
+
+            <h1>{% trans "Update Existing Car Info" %}</h1>
             <form method="POST" enctype="multipart/form-data" style="text-align: left;">
                 {% csrf_token %}
                 {{ form.as_p }}
@@ -26,9 +17,8 @@
                     {% endfor %}
                 
                 {% endif %}
-                <button type="submit" class="btn btn-primary btn-lg" style="display: block; margin: 0 auto;">Submit</button>
+                <button type="submit" class="btn btn-primary btn-lg" style="display: block; margin: 0 auto;">{% trans "Submit" %}</button>
             </form>
         </div>
     </header>
-</body>
-</html>
+{% endblock %}

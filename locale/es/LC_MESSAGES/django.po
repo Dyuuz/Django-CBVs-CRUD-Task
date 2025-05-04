@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-04 22:22+0000\n"
+"POT-Creation-Date: 2025-05-04 23:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -18,10 +18,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 # Standard plural forms for Spanish
-#: .\CarProject\settings.py:129
+#: .\CarProject\settings.py:133
 msgid "English"
 msgstr "Inglés"
 
-#: .\CarProject\settings.py:130
+#: .\CarProject\settings.py:134
 msgid "Spanish"
 msgstr "Español"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-04 23:02+0000\n"
+"POT-Creation-Date: 2025-05-04 23:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,42 +19,42 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
 "1 : 2;\n"
 
-#: .\App\forms.py:11 .\App\forms.py:49 .\App\templates\list.html:27
+#: .\App\forms.py:11 .\App\forms.py:49 .\App\templates\list.html:28
 msgid "Ownership"
 msgstr "Propiedad"
 
 #: .\App\forms.py:12 .\App\forms.py:50 .\App\models.py:27
-#: .\App\templates\list.html:28
+#: .\App\templates\list.html:29
 msgid "Plate Number"
 msgstr "Número de Placa"
 
 #: .\App\forms.py:13 .\App\forms.py:51 .\App\models.py:28
-#: .\App\templates\list.html:29
+#: .\App\templates\list.html:30
 msgid "Driver"
 msgstr "Conductor"
 
 #: .\App\forms.py:14 .\App\forms.py:52 .\App\models.py:29
-#: .\App\templates\list.html:30
+#: .\App\templates\list.html:31
 msgid "Car Type"
 msgstr "Tipo de Auto"
 
 #: .\App\forms.py:15 .\App\forms.py:53 .\App\models.py:30
-#: .\App\templates\list.html:31
+#: .\App\templates\list.html:32
 msgid "Insurance"
 msgstr "Seguro"
 
 #: .\App\forms.py:16 .\App\forms.py:54 .\App\models.py:31
-#: .\App\templates\list.html:32
+#: .\App\templates\list.html:33
 msgid "Insurance Expiry Date"
 msgstr "Fecha de Vencimiento del Seguro"
 
 #: .\App\forms.py:17 .\App\forms.py:55 .\App\models.py:32
-#: .\App\templates\list.html:33
+#: .\App\templates\list.html:34
 msgid "Status"
 msgstr "Estado"
 
 #: .\App\forms.py:18 .\App\forms.py:56 .\App\models.py:33
-#: .\App\templates\list.html:34
+#: .\App\templates\list.html:35
 msgid "Year"
 msgstr "Año"
 
@@ -102,43 +102,47 @@ msgstr "Furgoneta"
 msgid "Vendor"
 msgstr "Vendedor"
 
-#: .\App\templates\create.html:17
+#: .\App\templates\create.html:5
 msgid "Create Car Info"
 msgstr "Crear Información del Auto"
 
-#: .\App\templates\create.html:32
+#: .\App\templates\create.html:20 .\App\templates\update.html:19
 msgid "Submit"
 msgstr "Enviar"
 
-#: .\App\templates\list.html:17
+#: .\App\templates\list.html:18
 msgid "Car Projects"
 msgstr "Proyectos de Autos"
 
-#: .\App\templates\list.html:35
+#: .\App\templates\list.html:36
 #, fuzzy
 #| msgid "Car Serial Number"
 msgid "Serial Number"
 msgstr "Número de Serie del Auto"
 
-#: .\App\templates\list.html:40
+#: .\App\templates\list.html:41
 msgid "Edit"
 msgstr "Editar"
 
-#: .\App\templates\list.html:51
+#: .\App\templates\list.html:52
 msgid "Delete"
 msgstr "Eliminar"
 
-#: .\App\templates\list.html:61
+#: .\App\templates\list.html:62
 msgid "Total Cars"
 msgstr "Total de Autos"
 
-#: .\App\templates\list.html:63
+#: .\App\templates\list.html:64
 msgid "No Cars Available"
 msgstr "No hay Autos Disponibles"
 
-#: .\App\templates\list.html:67
+#: .\App\templates\list.html:68
 msgid "Add New Car"
 msgstr "Agregar Nuevo Auto"
+
+#: .\App\templates\update.html:7
+msgid "Update Existing Car Info"
+msgstr "Actualizar Información del Auto"
 
 #: .\App\views.py:25
 msgid "Car created successfully!"
