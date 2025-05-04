@@ -24,11 +24,12 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('App.urls')),
 
+    # i18n_patterns will automatically add the language prefix to the URLs
+    # based on the user's selected language.
     *i18n_patterns(
         path('', CarListView.as_view(), name='home'),
         path('add/', CarCreateView.as_view(), name='car_add'),
         path('car/<int:pk>/edit', CarUpdateView.as_view(), name='car_edit'),
         path('car/<int:pk>/delete', CarDeleteView.as_view(), name='car_delete'),
-        # Other URL patterns go here
     ),
 ]

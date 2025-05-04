@@ -105,7 +105,7 @@ msgstr ""
 
 #: .\App\templates\create.html:18
 msgid "Create Car Info"
-msgstr ""
+msgstr "Crear Información del Auto"
 
 #: .\App\templates\list.html:19 .\App\templates\list.html:22
 msgid "Car Projects"

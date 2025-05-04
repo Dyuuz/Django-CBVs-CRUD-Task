@@ -104,12 +104,12 @@ msgstr ""
 
 #: .\App\templates\list.html:17
 msgid "Spanish"
-msgstr ""
+msgstr "Spanish"
 
 #: .\App\templates\list.html:18
 msgid "Likewise"
-msgstr ""
+msgstr "Likewise"
 
 #: .\App\templates\list.html:19 .\App\templates\list.html:22
 msgid "Car Projects"
-msgstr ""
+msgstr "Car Projects"

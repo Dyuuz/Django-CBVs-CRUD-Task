@@ -107,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = 'es'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'UTC'
 
@@ -127,11 +127,12 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 LANGUAGES = [
     ('en', _('English')),
-    ('es', _('Spanish')),  # You can add more languages here
+    ('es', _('Spanish')),
 ]
 
 LOCALE_PATHS = [
-    os.path.join('BASE_DIR', 'locale'),  # Add a locale directory to store translation files
+    os.path.join('BASE_DIR', 'locale'),  # Directory for translation files
+    os.path.join('BASE_DIR', 'App/locale'),
 ]
 
 # Default primary key field type
