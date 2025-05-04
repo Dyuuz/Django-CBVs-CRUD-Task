@@ -1,5 +1,6 @@
 from django.urls import path
 from .views import CarListView, CarCreateView, CarUpdateView, CarDeleteView
+from django.conf.urls.i18n import i18n_patterns
 
 urlpatterns = [
     path('', CarListView.as_view(), name='car_list'),

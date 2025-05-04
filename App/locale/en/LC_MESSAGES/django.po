@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-04 21:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\App\forms.py:11 .\App\forms.py:49
+msgid "Ownership"
+msgstr "Onwn"
+
+#: .\App\forms.py:12 .\App\forms.py:50 .\App\models.py:27
+msgid "Plate Number"
+msgstr ""
+
+#: .\App\forms.py:13 .\App\forms.py:51 .\App\models.py:28
+msgid "Driver"
+msgstr ""
+
+#: .\App\forms.py:14 .\App\forms.py:52 .\App\models.py:29
+msgid "Car Type"
+msgstr ""
+
+#: .\App\forms.py:15 .\App\forms.py:53 .\App\models.py:30
+msgid "Insurance"
+msgstr ""
+
+#: .\App\forms.py:16 .\App\forms.py:54 .\App\models.py:31
+msgid "Insurance Expiry Date"
+msgstr ""
+
+#: .\App\forms.py:17 .\App\forms.py:55 .\App\models.py:32
+msgid "Status"
+msgstr ""
+
+#: .\App\forms.py:18 .\App\forms.py:56 .\App\models.py:33
+msgid "Year"
+msgstr ""
+
+#: .\App\forms.py:19 .\App\forms.py:57 .\App\models.py:34
+msgid "Car Serial Number"
+msgstr ""
+
+#: .\App\forms.py:29
+msgid "This plate number already exists."
+msgstr ""
+
+#: .\App\forms.py:35
+msgid "This serial number already exists."
+msgstr ""
+
+#: .\App\forms.py:41 .\App\forms.py:79
+msgid "The insurance expiry date cannot be in the past."
+msgstr ""
+
+#: .\App\forms.py:67
+msgid "A car with this plate number already exists."
+msgstr ""
+
+#: .\App\forms.py:73
+msgid "A car with this serial number already exists."
+msgstr ""
+
+#: .\App\models.py:21
+msgid "Sedan"
+msgstr ""
+
+#: .\App\models.py:22
+msgid "SUV"
+msgstr ""
+
+#: .\App\models.py:23
+msgid "Truck"
+msgstr ""
+
+#: .\App\models.py:24
+msgid "Van"
+msgstr ""
+
+#: .\App\models.py:26
+msgid "Vendor"
+msgstr ""
+
+#: .\App\templates\create.html:16
+msgid "Create Car Info"
+msgstr ""
+
+#: .\App\templates\list.html:16
+msgid "English"
+msgstr ""
+
+#: .\App\templates\list.html:17
+msgid "Spanish"
+msgstr ""
+
+#: .\App\templates\list.html:18
+msgid "Likewise"
+msgstr ""
+
+#: .\App\templates\list.html:19 .\App\templates\list.html:22
+msgid "Car Projects"
+msgstr ""
