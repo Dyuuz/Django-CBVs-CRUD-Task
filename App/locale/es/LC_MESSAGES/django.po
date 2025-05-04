@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-04 22:22+0000\n"
+"POT-Creation-Date: 2025-05-04 23:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,94 +19,131 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
 "1 : 2;\n"
 
-#: .\App\forms.py:11 .\App\forms.py:49
+#: .\App\forms.py:11 .\App\forms.py:49 .\App\templates\list.html:27
 msgid "Ownership"
 msgstr "Propiedad"
 
 #: .\App\forms.py:12 .\App\forms.py:50 .\App\models.py:27
+#: .\App\templates\list.html:28
 msgid "Plate Number"
-msgstr ""
+msgstr "Número de Placa"
 
 #: .\App\forms.py:13 .\App\forms.py:51 .\App\models.py:28
+#: .\App\templates\list.html:29
 msgid "Driver"
-msgstr ""
+msgstr "Conductor"
 
 #: .\App\forms.py:14 .\App\forms.py:52 .\App\models.py:29
+#: .\App\templates\list.html:30
 msgid "Car Type"
-msgstr ""
+msgstr "Tipo de Auto"
 
 #: .\App\forms.py:15 .\App\forms.py:53 .\App\models.py:30
+#: .\App\templates\list.html:31
 msgid "Insurance"
-msgstr ""
+msgstr "Seguro"
 
 #: .\App\forms.py:16 .\App\forms.py:54 .\App\models.py:31
+#: .\App\templates\list.html:32
 msgid "Insurance Expiry Date"
-msgstr ""
+msgstr "Fecha de Vencimiento del Seguro"
 
 #: .\App\forms.py:17 .\App\forms.py:55 .\App\models.py:32
+#: .\App\templates\list.html:33
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 #: .\App\forms.py:18 .\App\forms.py:56 .\App\models.py:33
+#: .\App\templates\list.html:34
 msgid "Year"
-msgstr ""
+msgstr "Año"
 
 #: .\App\forms.py:19 .\App\forms.py:57 .\App\models.py:34
 msgid "Car Serial Number"
-msgstr ""
+msgstr "Número de Serie del Auto"
 
 #: .\App\forms.py:29
 msgid "This plate number already exists."
-msgstr ""
+msgstr "Este número de placa ya existe."
 
 #: .\App\forms.py:35
 msgid "This serial number already exists."
-msgstr ""
+msgstr "Este número de serie ya existe."
 
 #: .\App\forms.py:41 .\App\forms.py:79
 msgid "The insurance expiry date cannot be in the past."
-msgstr ""
+msgstr "La fecha de vencimiento del seguro no puede estar en el pasado."
 
 #: .\App\forms.py:67
 msgid "A car with this plate number already exists."
-msgstr ""
+msgstr "Un auto con este número de placa ya existe."
 
 #: .\App\forms.py:73
 msgid "A car with this serial number already exists."
-msgstr ""
+msgstr "Un auto con este número de serie ya existe."
 
 #: .\App\models.py:21
 msgid "Sedan"
-msgstr ""
+msgstr "Sedán"
 
 #: .\App\models.py:22
 msgid "SUV"
-msgstr ""
+msgstr "SUV"
 
 #: .\App\models.py:23
 msgid "Truck"
-msgstr ""
+msgstr "Camión"
 
-#: .\App\models.py:24 .\App\templates\list.html:18
+#: .\App\models.py:24
 msgid "Van"
-msgstr ""
+msgstr "Furgoneta"
 
 #: .\App\models.py:26
 msgid "Vendor"
-msgstr ""
+msgstr "Vendedor"
 
-#: .\App\templates\create.html:16 .\App\templates\list.html:16
-msgid "English"
-msgstr ""
-
-#: .\App\templates\create.html:17 .\App\templates\list.html:17
-msgid "Spanish"
-msgstr ""
-
-#: .\App\templates\create.html:18
+#: .\App\templates\create.html:17
 msgid "Create Car Info"
 msgstr "Crear Información del Auto"
 
-#: .\App\templates\list.html:19 .\App\templates\list.html:22
+#: .\App\templates\create.html:32
+msgid "Submit"
+msgstr "Enviar"
+
+#: .\App\templates\list.html:17
 msgid "Car Projects"
 msgstr "Proyectos de Autos"
+
+#: .\App\templates\list.html:35
+#, fuzzy
+#| msgid "Car Serial Number"
+msgid "Serial Number"
+msgstr "Número de Serie del Auto"
+
+#: .\App\templates\list.html:40
+msgid "Edit"
+msgstr "Editar"
+
+#: .\App\templates\list.html:51
+msgid "Delete"
+msgstr "Eliminar"
+
+#: .\App\templates\list.html:61
+msgid "Total Cars"
+msgstr "Total de Autos"
+
+#: .\App\templates\list.html:63
+msgid "No Cars Available"
+msgstr "No hay Autos Disponibles"
+
+#: .\App\templates\list.html:67
+msgid "Add New Car"
+msgstr "Agregar Nuevo Auto"
+
+#: .\App\views.py:25
+msgid "Car created successfully!"
+msgstr "Auto creado con éxito!"
+
+#: .\App\views.py:42
+msgid "Car updated successfully!"
+msgstr "Auto actualizado con éxito!"

@@ -24,20 +24,20 @@
         <div class="card-body">
           <h5 class="card-title text-primary fw-bold">Car {{ car.pk }}</h5>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item"><strong>Ownership:</strong> {{ car.ownership }}</li>
-            <li class="list-group-item"><strong>Plate Number:</strong> {{ car.plate_number }}</li>
-            <li class="list-group-item"><strong>Driver:</strong> {{ car.driver }}</li>
-            <li class="list-group-item"><strong>Car Type:</strong> {{ car.car_type }}</li>
-            <li class="list-group-item"><strong>Insurance:</strong> {{ car.insurance }}</li>
-            <li class="list-group-item"><strong>Insurance Expiry Date:</strong> {{ car.insurance_expiry_date }}</li>
-            <li class="list-group-item"><strong>Status:</strong> {{ car.status }}</li>
-            <li class="list-group-item"><strong>Year:</strong> {{ car.year }}</li>
-            <li class="list-group-item"><strong>Serial Number:</strong> {{ car.car_serial_number }}</li>
+            <li class="list-group-item"><strong>{% trans "Ownership" %}:</strong> {{ car.ownership }}</li>
+            <li class="list-group-item"><strong>{% trans "Plate Number" %}:</strong> {{ car.plate_number }}</li>
+            <li class="list-group-item"><strong>{% trans "Driver" %}:</strong> {{ car.driver }}</li>
+            <li class="list-group-item"><strong>{% trans "Car Type" %}:</strong> {{ car.car_type }}</li>
+            <li class="list-group-item"><strong>{% trans "Insurance" %}:</strong> {{ car.insurance }}</li>
+            <li class="list-group-item"><strong>{% trans "Insurance Expiry Date" %}:</strong> {{ car.insurance_expiry_date }}</li>
+            <li class="list-group-item"><strong>{% trans "Status" %}:</strong> {{ car.status }}</li>
+            <li class="list-group-item"><strong>{% trans "Year" %}:</strong> {{ car.year }}</li>
+            <li class="list-group-item"><strong>{% trans "Serial Number" %}:</strong> {{ car.car_serial_number }}</li>
           </ul>
           <!-- <div class="d-flex justify-content-between mt-3"> -->
             <div class="d-flex align-items-center justify-content-between">
               <a href="{% url 'car_edit' pk=car.pk %}" class="btn btn-outline-primary btn-sm me-2 d-flex align-items-center">
-              <i class="fas fa-edit me-1"></i> Edit
+              <i class="fas fa-edit me-1"></i> {% trans "Edit" %}
               </a>
               <form 
               method="POST"
@@ -48,7 +48,7 @@
               hx-on::after-request="htmx.ajax('GET', '{% url 'car_list' %}', '#car-list')">
               {% csrf_token %}
               <button type="submit" class="btn btn-outline-danger btn-sm d-flex align-items-center">
-                <i class="fas fa-trash me-1"></i> Delete
+                <i class="fas fa-trash me-1"></i> {% trans "Delete" %}
               </button>
               </form>
             <!-- </div> -->
@@ -58,13 +58,13 @@
       </div>
       {% endfor %}
       </div>
-      <h2 class="text-center mt-5 text-muted">Total Cars: {{ cars|length }}</h2>
+      <h2 class="text-center mt-5 text-muted">{% trans "Total Cars" %}: {{ cars|length }}</h2>
       {% else %}
-      <h2 class="text-center text-muted">No Cars Available</h2>
+      <h2 class="text-center text-muted">{% trans "No Cars Available" %}</h2>
       {% endif %}
       <div class="text-center mt-5">
       <a href="{% url 'car_add' %}" class="btn btn-primary btn-lg shadow">
-        <i class="fas fa-plus"></i> Add New Car
+        <i class="fas fa-plus"></i> {% trans "Add New Car" %}
       </a>
       </div>
     </header>

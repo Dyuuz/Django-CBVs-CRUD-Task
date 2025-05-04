@@ -4,6 +4,7 @@ from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 from .models import Car
 from .forms import CreateCarForm, CarUpdateForm
+from django.utils.translation import gettext as _
 
 class CarListView(ListView):
     model = Car
@@ -21,8 +22,9 @@ class CarCreateView(CreateView):
         self.object = form.save() # Save the form data to the database
 
         # Redirect to the success URL after saving the form
-        return HttpResponse('Car created successfully')
-    
+        success_message = _('Car created successfully!')
+        return HttpResponse(success_message)
+
     def form_invalid(self, form):
         # Pass form errors to the template
         return self.render_to_response(self.get_context_data(form=form, errors=form.errors))
@@ -37,7 +39,8 @@ class CarUpdateView(UpdateView):
         self.object = form.save() # Save the form data to the database
         
         # Redirect to the success URL after saving the form
-        return HttpResponse('Car updated successfully')
+        success_message = _('Car updated successfully!')
+        return HttpResponse(success_message)
     
     def form_invalid(self, form):
         # Pass form errors to the template

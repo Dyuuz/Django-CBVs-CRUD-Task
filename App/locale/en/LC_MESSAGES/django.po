@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-04 21:59+0000\n"
+"POT-Creation-Date: 2025-05-04 23:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,98 +18,135 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\App\forms.py:11 .\App\forms.py:49
+#: .\App\forms.py:11 .\App\forms.py:49 .\App\templates\list.html:27
 msgid "Ownership"
-msgstr "Onwn"
+msgstr "Ownership"
 
 #: .\App\forms.py:12 .\App\forms.py:50 .\App\models.py:27
+#: .\App\templates\list.html:28
 msgid "Plate Number"
-msgstr ""
+msgstr "Plate Number"
 
 #: .\App\forms.py:13 .\App\forms.py:51 .\App\models.py:28
+#: .\App\templates\list.html:29
 msgid "Driver"
-msgstr ""
+msgstr "Driver"
 
 #: .\App\forms.py:14 .\App\forms.py:52 .\App\models.py:29
+#: .\App\templates\list.html:30
 msgid "Car Type"
-msgstr ""
+msgstr "Car Type"
 
 #: .\App\forms.py:15 .\App\forms.py:53 .\App\models.py:30
+#: .\App\templates\list.html:31
 msgid "Insurance"
-msgstr ""
+msgstr "Insurance"
 
 #: .\App\forms.py:16 .\App\forms.py:54 .\App\models.py:31
+#: .\App\templates\list.html:32
 msgid "Insurance Expiry Date"
-msgstr ""
+msgstr "Insurance Expiry Date"
 
 #: .\App\forms.py:17 .\App\forms.py:55 .\App\models.py:32
+#: .\App\templates\list.html:33
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: .\App\forms.py:18 .\App\forms.py:56 .\App\models.py:33
+#: .\App\templates\list.html:34
 msgid "Year"
-msgstr ""
+msgstr "Year"
 
 #: .\App\forms.py:19 .\App\forms.py:57 .\App\models.py:34
 msgid "Car Serial Number"
-msgstr ""
+msgstr "Car Serial Number"
 
 #: .\App\forms.py:29
 msgid "This plate number already exists."
-msgstr ""
+msgstr "This plate number already exists."
 
 #: .\App\forms.py:35
 msgid "This serial number already exists."
-msgstr ""
+msgstr "This serial number already exists."
 
 #: .\App\forms.py:41 .\App\forms.py:79
 msgid "The insurance expiry date cannot be in the past."
-msgstr ""
+msgstr "The insurance expiry date cannot be in the past."
 
 #: .\App\forms.py:67
 msgid "A car with this plate number already exists."
-msgstr ""
+msgstr "A car with this plate number already exists."
 
 #: .\App\forms.py:73
 msgid "A car with this serial number already exists."
-msgstr ""
+msgstr "A car with this serial number already exists."
 
 #: .\App\models.py:21
 msgid "Sedan"
-msgstr ""
+msgstr "Sedan"
 
 #: .\App\models.py:22
 msgid "SUV"
-msgstr ""
+msgstr "SUV"
 
 #: .\App\models.py:23
 msgid "Truck"
-msgstr ""
+msgstr "Truck"
 
 #: .\App\models.py:24
 msgid "Van"
-msgstr ""
+msgstr "Van"
 
 #: .\App\models.py:26
 msgid "Vendor"
-msgstr ""
+msgstr "Vendor"
 
-#: .\App\templates\create.html:16
+#: .\App\templates\create.html:17
 msgid "Create Car Info"
-msgstr ""
+msgstr "Create Car Info"
 
-#: .\App\templates\list.html:16
-msgid "English"
-msgstr ""
+#: .\App\templates\create.html:32
+msgid "Submit"
+msgstr "Submit"
 
 #: .\App\templates\list.html:17
-msgid "Spanish"
-msgstr "Spanish"
-
-#: .\App\templates\list.html:18
-msgid "Likewise"
-msgstr "Likewise"
-
-#: .\App\templates\list.html:19 .\App\templates\list.html:22
 msgid "Car Projects"
 msgstr "Car Projects"
+
+#: .\App\templates\list.html:35
+msgid "Serial Number"
+msgstr "Serial Number"
+
+#: .\App\templates\list.html:40
+msgid "Edit"
+msgstr "Edit"
+
+#: .\App\templates\list.html:51
+msgid "Delete"
+msgstr "Delete"
+
+#: .\App\templates\list.html:61
+msgid "Total Cars"
+msgstr "Total Cars"
+
+#: .\App\templates\list.html:63
+msgid "No Cars Available"
+msgstr "No Cars Available"
+
+#: .\App\templates\list.html:67
+msgid "Add New Car"
+msgstr "Add New Car"
+
+#: .\App\views.py:25
+msgid "Car created successfully!"
+msgstr "Car created successfully!"
+
+#: .\App\views.py:42
+msgid "Car updated successfully!"
+msgstr "Car updated successfully!"
+
+#~ msgid "Spanish"
+#~ msgstr "Spanish"
+
+#~ msgid "Likewise"
+#~ msgstr "Likewise"
