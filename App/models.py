@@ -25,11 +25,11 @@ class Car(models.Model):
 
     ownership = models.ForeignKey(Vendor, on_delete=models.CASCADE, verbose_name=_('Vendor'))
     plate_number = models.CharField(max_length=20, unique=True, verbose_name=_('Plate Number'))
-    driver = models.ForeignKey(Driver, on_delete=models.SET_NULL, null=True, verbose_name=_('Driver'))
+    driver = models.ForeignKey(Driver, on_delete=models.CASCADE, null=True, verbose_name=_('Driver'))
     car_type = models.CharField(max_length=10, choices=CarType.choices, verbose_name=_('Car Type'))
     insurance = models.CharField(max_length=100, verbose_name=_('Insurance'))
     insurance_expiry_date = models.DateField(verbose_name=_('Insurance Expiry Date'))
-    status = models.CharField(max_length=50, verbose_name=_('Status'))
+    status = models.BooleanField(default=True, verbose_name=_('Status'))
     year = models.PositiveIntegerField(verbose_name=_('Year'))
     car_serial_number = models.CharField(max_length=100, unique=True, verbose_name=_('Car Serial Number'))
 
